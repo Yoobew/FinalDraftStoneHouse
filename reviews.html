@@ -1,0 +1,121 @@
+---
+title: 'Reviews'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'reviews/'
+eleventyNavigation:
+    key: Reviews
+    order: 400
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/reviews.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Our Reviews</h1>
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="https://cdn.pixabay.com/photo/2014/04/02/10/15/bean-303262_640.png">
+            <source media="(min-width: 601px)" srcset="https://cdn.pixabay.com/photo/2014/04/02/10/15/bean-303262_640.png">
+            <img aria-hidden="true" decoding="async" src="https://cdn.pixabay.com/photo/2014/04/02/10/15/bean-303262_640.png" alt="new home" width="2500" height="1667" loading="eager">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Reviews                     -->
+    <!-- ============================================ -->
+
+    <section id="reviews">
+        <div class="container">
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Awesome place!! Great food and very friendly staff! Location is great with easy parking and nice walking paths around.                </p>
+                <div class="star-group">
+                    <span class="name">B Miller<span class="desc">Guest</span></span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Have eaten here many times pre-COVID. Cannot imagine why I have not already written a review. Great service, tasty food, reasonable prices. Can recommend                </p>
+                <div class="star-group">
+                    <span class="name">Vincent M.<span class="desc">Guest</span></span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Beautiful restaurant, meal sizes are large, variety is great, quality of food is excellent, it does become quite full and busy over weekends, so booking is necessary                </p>
+                <div class="star-group">
+                    <span class="name">Alex L.<span class="desc">Guest</span></span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile-woman.svg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Wow, what a beautiful set up! Not only are the staff incredibly friendly, the extensive menu including many allergy friendly options was very suitable for our family. Highly recommend and we will definitely be coming back soon.                </p>
+                <div class="star-group">
+                    <span class="name">Arrieana M.<span class="desc">Guest</span></span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    We are a group of elderly men and have been several times to Stonehouse. The staff are very helpful and we always are well looked after.                </p>
+                <div class="star-group">
+                    <span class="name">Leo N.<span class="desc">Guest</span></span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+            <div class="review">
+                <picture>
+                    <img class="profile" loading="lazy" decoding="async" src="/assets/svgs/profile.svg" alt="" width="99" height="99">
+                </picture>
+                <p>
+                    Called in for coffee and milkshakes to finish a lovely day in the hills. We were drawn in by the quaint building and stunning setting. Great service, nice coffee ... choc zucchini cake is yummy!                </p>
+                <div class="star-group">
+                    <span class="name">Brian A.<span class="desc">Guest</span></span>
+                    <picture>
+                        <img aria-hidden="true" loading="lazy" decoding="async" src="/assets/svgs/stars.svg" alt="stars" width="91" height="15">
+                    </picture>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

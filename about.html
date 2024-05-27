@@ -1,0 +1,61 @@
+---
+title: 'About'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'about/'
+eleventyNavigation:
+    key: About Us
+    order: 200
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/about.css">
+{% endblock %}
+
+{% block body %}
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">About Us</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="https://freight.cargo.site/w/1500/h/1000/q/75/i/Q1520519011856204887750487083326/Stonehouse_interiors_001.jpg">
+            <source media="(min-width: 601px)" srcset="https://freight.cargo.site/w/1500/h/1000/q/75/i/Q1520519011856204887750487083326/Stonehouse_interiors_001.jpg">
+            <img aria-hidden="true" decoding="async" src="https://freight.cargo.site/w/1500/h/1000/q/75/i/Q1520519011856204887750487083326/Stonehouse_interiors_001.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="https://freight.cargo.site/w/1500/h/1000/q/75/i/Q1520519011856204887750487083326/Stonehouse_interiors_001.jpg">
+                    <source media="(min-width: 601px)" srcset="https://freight.cargo.site/w/1500/h/1000/q/75/i/Q1520519011856204887750487083326/Stonehouse_interiors_001.jpg">
+                    <img aria-hidden="true" decoding="async" src="https://freight.cargo.site/w/1500/h/1000/q/75/i/Q1520519011856204887750487083326/Stonehouse_interiors_001.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                </picture>
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <span class="cs-topper">About Us</span>
+                <h2 class="cs-title">Stonehouse Warrandyte</h2>
+                <p class="cs-text">
+                    STONEHOUSE WARRANDYTE is an iconic landmark located in Warrandyte which was built in 1939. Fast-forward to today, and this historic building has transformed into a spacious café and restaurant serving modern-Australian cuisine, championing local produce. STONEHOUSE WARRANDYTE is helmed by husband and wife duo and locals, Deon and Stephanie Batticciotto and long-time friend Lee Papoulis since 2020. Spanning over 20 years of hospitality experience, the trio bring a wealth of knowledge having owned and operated multiple cafes and restaurants throughout Melbourne’s CBD as well resumed roles as head Chef in many more. STONEHOUSE WARRANDYTE is a place where everything’s seriously good, but not too serious, with all the familiarity of old-town nostalgia and the comfort of your favourite food.                </p>
+
+
+                <a href="/projects" class="cs-button-solid">Our Gallery</a>
+            </div>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+
+{% endblock %}

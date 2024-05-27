@@ -1,0 +1,74 @@
+---
+title: 'Contact'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/cabinets2.jpg'
+permalink: 'contact/'
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/contact.css">
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    LANDING                   -->
+    <!-- ============================================ -->
+
+    <section id="int-hero">
+        <h1 id="home-h">Contact Us</h1>
+        <picture>
+            <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
+            <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
+            <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="kitchen cabinets" loading="eager" width="2500" height="1667">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                Contact Form                  -->
+    <!-- ============================================ -->
+
+    <section id="cs-contact">
+        <div class="cs-container">
+            <form id="cs-form" name="Contact Form" method="post">
+                <div class="cs-content">
+                    <span class="cs-topper">Contact</span>
+                    <h2 class="cs-title">Get in Touch With us at Stonehouse Warrandyte</h2>
+                    <p class="cs-text">
+                    </p>
+                </div>
+                <label>
+                    Name
+                    <input required type="text" id="name" name="name" placeholder="Name">
+                </label>
+                <label>
+                    Email
+                    <input required type="text" id="email" name="email" placeholder="Email">
+                </label>
+                <label>
+                    Phone
+                    <input required type="text" id="phone" name="phone" placeholder="Phone">
+                </label>
+                <label>
+                    How Did You Find Us
+                    <input type="text" id="find" name="find-us" placeholder="How did you find us?">
+                </label>
+                <label class="cs-label-message">
+                    Message
+                    <textarea required name="Message" id="message" placeholder="Write message..."></textarea>
+                </label>
+                <button class="cs-button-solid" type="submit">Submit Message</button>
+            </form>
+            <div class="cs-right-section">
+                <!-- Background Image-->
+                <picture class="cs-bg-picture">
+                    <source media="(min-width: 601px)" srcset="https://scontent.fmel17-1.fna.fbcdn.net/v/t39.30808-6/301253734_589531696035160_4184238515874961057_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=b8ZWzX9CdIQQ7kNvgF1eIDA&_nc_ht=scontent.fmel17-1.fna&oh=00_AYDwJntBgjwGxcILef5fsAAME8KtV1rQOR_3GhSimZfwTA&oe=665A4F5C">
+                    <img aria-hidden="true" decoding="async" src="https://scontent.fmel17-1.fna.fbcdn.net/v/t39.30808-6/301253734_589531696035160_4184238515874961057_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=5f2048&_nc_ohc=b8ZWzX9CdIQQ7kNvgF1eIDA&_nc_ht=scontent.fmel17-1.fna&oh=00_AYDwJntBgjwGxcILef5fsAAME8KtV1rQOR_3GhSimZfwTA&oe=665A4F5C" alt="building" loading="lazy" width="2500" height="1667">
+                </picture>
+
+            </div>
+        </div>
+    </section>
+{% endblock %}

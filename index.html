@@ -1,0 +1,274 @@
+---
+title: 'Pixel Perfect Websites'
+description: 'Meta description for the page'
+preloadImg: '/assets/images/landing.jpg'
+permalink: '/'
+eleventyNavigation:
+  key: Home
+  order: 100
+---
+
+{% extends "layouts/base.html" %}
+
+{% block head %}
+    <link rel="stylesheet" href="/assets/css/local.css" />
+    <link rel="stylesheet" href="/assets/css/critical.css" />
+
+    <!-- Script for Netlify Identity -->
+    <script defer src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    <script defer>
+        if (window.netlifyIdentity) {
+            window
+                .netlifyIdentity
+                .on('init', (user) => {
+                    if (!user) {
+                        window
+                            .netlifyIdentity
+                            .on('login', () => {
+                                document.location.href = '/admin/';
+                            });
+                    }
+                });
+        }
+    </script>
+{% endblock %}
+
+{% block body %}
+
+    <!-- ============================================ -->
+    <!--                    Hero                      -->
+    <!-- ============================================ -->
+
+    <section id="hero">
+        <div class="cs-container">
+            <div class="cs-flex-group">
+                <span class="cs-topper"></span>
+                <h1 class="cs-title">Warrandyte Stonehouse Cafe</h1>
+                <p class="cs-text">
+                    Vibrant and flavourful cafe in the heart of Warrandyte. Surrounded by nature and hills, this cafe is sure to bring peace to your soul.
+                </p>
+                <a href="/about" class="cs-button-solid">Book a Table</a>
+                <a href="/contact" class="cs-button-transparent">
+                    <img
+                    class="cs-img"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Hero/play.svg"
+                    alt="play icon"
+                    width="17"
+                    height="17" />
+                    Contact Us
+                </a>
+            </div>
+        </div>
+
+        <!-- Background Image -->
+        <picture class="cs-picture">
+            <source media="(max-width: 600px)" srcset="https://cdn.pixabay.com/photo/2020/07/18/16/29/coffee-5417663_1280.png">
+            <source media="(min-width: 601px)" srcset="https://cdn.pixabay.com/photo/2020/07/18/16/29/coffee-5417663_1280.png">
+            <img aria-hidden="true" decoding="async" src="https://cdn.pixabay.com/photo/2020/07/18/16/29/coffee-5417663_1280.png" alt="new home" width="2500" height="1667" loading="eager">
+        </picture>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                  Services                    -->
+    <!-- ============================================ -->
+
+    <section id="services" class="services">
+        <!-- Get Icons From flaticon.com -->
+        <div class="card">
+            <h2>Popular Menu Items</h2>
+            <p>At Stonehouse Warrandyte Cafe, we pride ourselves on achieving a perfect satisfaction rate, ensuring every guest leaves delighted with their experience.</p>
+        </div>
+        <div class="card">
+
+            <h2>Swift Service</h2>
+            <p>Enjoy swift and efficient service at Stonehouse Warrandyte Cafe, where delicious meals and beverages are served promptly, ensuring a delightful dining experience.</p>
+        </div>
+        <div class="card">
+
+            <h2>Great Experience</h2>
+            <p>At Stonehouse Warrandyte Cafe, savor mouthwatering dishes, relax in a welcoming ambiance, and enjoy top-notch service that makes every visit special.</p>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                 Side By Side                 -->
+    <!-- ============================================ -->
+
+    <section id="sbs">
+        <div class="cs-container">
+            <!-- Left Image Section -->
+            <div class="cs-left">
+                <picture class="cs-picture cs-picture1">
+                    <source media="(max-width: 600px)" srcset="https://freight.cargo.site/w/2000/h/2666/q/75/i/C1520417875552678927025701685566/STONEHOUSE_FLOWERS_BY_NIGHT_0012.jpg">
+                    <source media="(min-width: 601px)" srcset="https://freight.cargo.site/w/2000/h/2666/q/75/i/C1520417875552678927025701685566/STONEHOUSE_FLOWERS_BY_NIGHT_0012.jpg">
+                    <img aria-hidden="true" decoding="async" src="https://freight.cargo.site/w/2000/h/2666/q/75/i/C1520417875552678927025701685566/STONEHOUSE_FLOWERS_BY_NIGHT_0012.jpg" alt="cabinets" loading="lazy" width="400" height="563">
+                </picture>
+
+            </div>
+            <!-- Right Content Section-->
+            <div class="cs-right">
+                <span class="cs-topper">About Us</span>
+                <h2 class="cs-title">Stonehouse Warrandyte Cafe</h2>
+                <p class="cs-text">
+                    STONEHOUSE WARRANDYTE is an iconic landmark located in Warrandyte which was built in 1939. Fast-forward to today, and this historic building has transformed into a spacious café and restaurant serving modern-Australian cuisine, championing local produce. STONEHOUSE WARRANDYTE is helmed by husband and wife duo and locals, Deon and Stephanie Batticciotto and long-time friend Lee Papoulis since 2020. Spanning over 20 years of hospitality experience, the trio bring a wealth of knowledge having owned and operated multiple cafes and restaurants throughout Melbourne’s CBD as well resumed roles as head Chef in many more. STONEHOUSE WARRANDYTE is a place where everything’s seriously good, but not too serious, with all the familiarity of old-town nostalgia and the comfort of your favourite food.                </p>
+
+
+                <a href="/about" class="cs-button-solid">More About Us</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--            Extra Content To Rank             -->
+    <!-- ============================================ -->
+
+
+
+    <!-- ============================================ -->
+    <!--                   Gallery                    -->
+    <!-- ============================================ -->
+
+    <section id="gallery">
+        <div class="cs-container">
+            <span class="cs-topper">Our Portfolio</span>
+            <h2 class="cs-title">A collage of all our pictures</h2>
+            <div class="cs-image-group">
+                <!-- Row 1-->
+                <div class="cs-row cs-row-1">
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                    <picture class="cs-picture cs-picture1">
+                        <source media="(max-width: 600px)" srcset="https://freight.cargo.site/w/1800/h/1200/q/75/i/A1520466881412792816778748922174/STONEHOUSE_MENU_MIX_BREAKFAST_SET_007.JPG">
+                        <source media="(min-width: 601px)" srcset="https://freight.cargo.site/w/1800/h/1200/q/75/i/A1520466881412792816778748922174/STONEHOUSE_MENU_MIX_BREAKFAST_SET_007.JPG">
+                        <img aria-hidden="true" decoding="async" src="https://freight.cargo.site/w/1800/h/1200/q/75/i/A1520466881412792816778748922174/STONEHOUSE_MENU_MIX_BREAKFAST_SET_007.JPG" alt="Food" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture2">
+                        <source media="(max-width: 600px)" srcset="https://freight.cargo.site/w/1800/h/1200/q/75/i/Q1520481930856903959389662906686/STONEHOUSE_MENU_PLATE_009A-SCALE.JPG">
+                        <source media="(min-width: 601px)" srcset="https://freight.cargo.site/w/1800/h/1200/q/75/i/Q1520481930856903959389662906686/STONEHOUSE_MENU_PLATE_009A-SCALE.JPG">
+                        <img aria-hidden="true" decoding="async" src="https://freight.cargo.site/w/1800/h/1200/q/75/i/Q1520481930856903959389662906686/STONEHOUSE_MENU_PLATE_009A-SCALE.JPG" alt="Food" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture3">
+                        <source media="(max-width: 600px)" srcset="https://freight.cargo.site/w/1800/h/1200/q/75/i/P1520461623334415302534446745918/STONEHOUSE_MENU_PLATE_001C.JPG">
+                        <source media="(min-width: 601px)" srcset="https://freight.cargo.site/w/1800/h/1200/q/75/i/P1520461623334415302534446745918/STONEHOUSE_MENU_PLATE_001C.JPG">
+                        <img aria-hidden="true" decoding="async" src="https://freight.cargo.site/w/1800/h/1200/q/75/i/P1520461623334415302534446745918/STONEHOUSE_MENU_PLATE_001C.JPG" alt="Food" loading="lazy" width="400" height="560">
+                    </picture>
+                </div>
+                <!-- Row 2 -->
+                <div class="cs-row cs-row-2">
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                    <picture class="cs-picture cs-picture1">
+                        <source media="(max-width: 600px)" srcset="https://freight.cargo.site/w/1800/h/1200/q/75/i/F1520465125153629791113468217662/STONEHOUSE_MENU_PLATE_015B.JPG">
+                        <source media="(min-width: 601px)" srcset="https://freight.cargo.site/w/1800/h/1200/q/75/i/F1520465125153629791113468217662/STONEHOUSE_MENU_PLATE_015B.JPG">
+                        <img aria-hidden="true" decoding="async" src="https://freight.cargo.site/w/1800/h/1200/q/75/i/F1520465125153629791113468217662/STONEHOUSE_MENU_PLATE_015B.JPG" alt="Food" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture2">
+                        <source media="(max-width: 600px)" srcset="https://freight.cargo.site/w/1800/h/1200/q/75/i/B1520462897819963355127367895358/STONEHOUSE_MENU_PLATE_008A.JPG">
+                        <source media="(min-width: 601px)" srcset="https://freight.cargo.site/w/1800/h/1200/q/75/i/B1520462897819963355127367895358/STONEHOUSE_MENU_PLATE_008A.JPG">
+                        <img aria-hidden="true" decoding="async" src="https://freight.cargo.site/w/1800/h/1200/q/75/i/B1520462897819963355127367895358/STONEHOUSE_MENU_PLATE_008A.JPG" alt="Food" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture3">
+                        <source media="(max-width: 600px)" srcset="https://freight.cargo.site/w/1800/h/1200/q/75/i/I1520467367134011021624952523070/STONEHOUSE_MENU_COFFEE_001.JPG">
+                        <source media="(min-width: 601px)" srcset="https://freight.cargo.site/w/1800/h/1200/q/75/i/I1520467367134011021624952523070/STONEHOUSE_MENU_COFFEE_001.JPG">
+                        <img aria-hidden="true" decoding="async" src="https://freight.cargo.site/w/1800/h/1200/q/75/i/I1520467367134011021624952523070/STONEHOUSE_MENU_COFFEE_001.JPG" alt="Food" loading="lazy" width="400" height="560">
+                    </picture>
+                </div>
+                <!-- Row 3 -->
+                <div class="cs-row cs-row-3">
+                    <!-- To add more images, copy and paste this row's picture tags here in order from cs-picture-1 to cs-picture-3 and they will maintain the same layout-->
+                    <picture class="cs-picture cs-picture1">
+                        <source media="(max-width: 600px)" srcset="https://freight.cargo.site/w/3750/h/2500/q/75/i/H1520464789994736715884624906558/STONEHOUSE_MENU_PLATE_014A-SCALE.JPG">
+                        <source media="(min-width: 601px)" srcset="https://freight.cargo.site/w/3750/h/2500/q/75/i/H1520464789994736715884624906558/STONEHOUSE_MENU_PLATE_014A-SCALE.JPG">
+                        <img aria-hidden="true" decoding="async" src="https://freight.cargo.site/w/3750/h/2500/q/75/i/H1520464789994736715884624906558/STONEHOUSE_MENU_PLATE_014A-SCALE.JPG" alt="Food" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture2">
+                        <source media="(max-width: 600px)" srcset="https://freight.cargo.site/w/1800/h/1200/q/75/i/P1520466501354524666140856977726/STONEHOUSE_MENU_MIX_BREAKFAST_SET_005.JPG">
+                        <source media="(min-width: 601px)" srcset="https://freight.cargo.site/w/1800/h/1200/q/75/i/P1520466501354524666140856977726/STONEHOUSE_MENU_MIX_BREAKFAST_SET_005.JPG">
+                        <img aria-hidden="true" decoding="async" src="https://freight.cargo.site/w/1800/h/1200/q/75/i/P1520466501354524666140856977726/STONEHOUSE_MENU_MIX_BREAKFAST_SET_005.JPG" alt="apartment addition" loading="lazy" width="400" height="560">
+                    </picture>
+                    <picture class="cs-picture cs-picture3">
+                        <source media="(max-width: 600px)" srcset="https://freight.cargo.site/w/1800/h/1200/q/75/i/W1520462177880435646390987426110/STONEHOUSE_MENU_PLATE_004C.JPG">
+                        <source media="(min-width: 601px)" srcset="https://freight.cargo.site/w/1800/h/1200/q/75/i/W1520462177880435646390987426110/STONEHOUSE_MENU_PLATE_004C.JPG">
+                        <img aria-hidden="true" decoding="async" src="https://freight.cargo.site/w/1800/h/1200/q/75/i/W1520462177880435646390987426110/STONEHOUSE_MENU_PLATE_004C.JPG" alt="kew kitchen cabinets" loading="lazy" width="400" height="560">
+                    </picture>
+
+                </div>
+            </div>
+            <a href="/projects" class="cs-button-solid">View Full Gallery</a>
+        </div>
+    </section>
+
+    <!-- ============================================ -->
+    <!--                   Reviews                    -->
+    <!-- ============================================ -->
+
+    <section id="reviews">
+        <div class="cs-container">
+            <span class="cs-topper">Our Reviews</span>
+            <h2 class="cs-title">Words From Our Guests</h2>
+            <p class="cs-text">
+                
+            </p>
+            <ul class="cs-card-group">
+                <!-- Review 1 -->
+                <li class="cs-item">
+                    <img
+                    class="cs-item-img"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile5.png"
+                    alt="profile picture"
+                    width="80"
+                    height="80" />
+                    <p class="cs-item-p">
+                        Good range of selections for savoury or sweets. Very dog friendly with side and rear balconies. Friendly staff who brought out water bowl for “Pups” with cuddles. Can be busy on weekends but perfect after a Yarra river walk.                    </p>
+                    <span class="cs-reviewer">
+                        Jon Doe
+                        <span class="cs-desc"></span>
+                    </span>
+                    <img
+                    class="cs-item-stars"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+                    alt="stars"
+                    width="96"
+                    height="16" />
+                </li>
+                <!-- Review 2 -->
+                <li class="cs-item">
+                    <img
+                    class="cs-item-img"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/profile-4.png"
+                    alt="profile picture"
+                    width="80"
+                    height="80" />
+                    <p class="cs-item-p">
+                        Beautiful restaurant, meal sizes are large, variety is great, quality of food is excellent, it does become quite full and busy over weekends, so booking is necessary. Other than that i had no complaints. It all was perfect.                  </p>
+                    <span class="cs-reviewer">
+                        Jane Doe
+                        <span class="cs-desc"></span>
+                    </span>
+                    <img
+                    class="cs-item-stars"
+                    aria-hidden="true"
+                    loading="lazy"
+                    decoding="async"
+                    src="https://csimg.nyc3.digitaloceanspaces.com/Reviews/stars-yellow.svg"
+                    alt="stars"
+                    width="96"
+                    height="16" />
+                </li>
+            </ul>
+            <a aria-label="read more reviews" href="/reviews" class="cs-button-solid">Our Reviews</a>
+        </div>
+    </section>
+
+    {% include 'components/cta.html' %}
+{% endblock %}
+
